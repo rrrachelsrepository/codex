@@ -411,3 +411,21 @@
   .kol-stat-reply .reply-rate{transition:none}
   .kol-stat-reply:hover .reply-rate{transform:none}
 }
+
+
+/* v28 — subtle hover emphasis for workflow details */
+.workflow div p{
+  transform-origin:left top;
+  transition:transform .26s cubic-bezier(.22,.7,.2,1),color .26s ease;
+  will-change:transform;
+}
+@media(hover:hover) and (pointer:fine){
+  .workflow div:hover p{
+    transform:scale(1.035);
+    color:#e1ded6;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .workflow div p{transition:none}
+  .workflow div:hover p{transform:none}
+}
