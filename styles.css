@@ -375,6 +375,8 @@
 .kol-stats{grid-template-columns:1fr 1fr 2fr}
 .kol-stat-reply .reply-rate{display:flex;align-items:baseline;gap:.18em;white-space:nowrap}
 .reply-rate i{font-style:normal;font-weight:300;letter-spacing:0}
+.kol-stat-reply .reply-rate>span{font-size:inherit;letter-spacing:inherit;text-transform:none}
+.kol-stat-reply .reply-rate>i{font-size:inherit}
 @media(max-width:900px){
   .kol-stats{grid-template-columns:1fr 1fr 2fr}
   .kol-brand img{width:146px}
