@@ -365,3 +365,28 @@
   .limited-layout .limited-switch{left:0;right:auto;bottom:6px}
   .limited-layout .limited-switch small{display:block;margin-left:4px;font-size:6px}
 }
+
+
+/* v22 — BloomChic brand lockup and responsive performance metric */
+.kol-case-top{align-items:flex-start}
+.kol-brand{display:flex;align-items:center;gap:16px}
+.kol-brand>span{font-size:9px;letter-spacing:.15em;color:#aaa;white-space:nowrap}
+.kol-brand img{width:clamp(132px,12vw,176px);height:auto;border:1px solid rgba(245,242,233,.28)}
+.kol-stats{grid-template-columns:1fr 1fr 2fr}
+.kol-stat-reply .reply-rate{display:flex;align-items:baseline;gap:.18em;white-space:nowrap}
+.reply-rate i{font-style:normal;font-weight:300;letter-spacing:0}
+@media(max-width:900px){
+  .kol-stats{grid-template-columns:1fr 1fr 2fr}
+  .kol-brand img{width:146px}
+}
+@media(max-width:600px){
+  .kol-case-top{gap:20px}
+  .kol-brand{gap:8px;flex-direction:column;align-items:flex-end}
+  .kol-brand>span{font-size:7px}
+  .kol-brand img{width:118px}
+  .kol-stats{grid-template-columns:1fr 1fr}
+  .kol-stats .kol-stat-reply{grid-column:1/-1}
+  .kol-stat-reply .reply-rate{display:grid;grid-template-columns:auto 1fr;gap:0;line-height:.82;white-space:normal}
+  .kol-stat-reply .reply-rate span:last-child{grid-column:1/-1}
+  .kol-stat-reply .reply-rate i{padding-left:.12em}
+}
