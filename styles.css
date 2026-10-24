@@ -396,3 +396,18 @@
 /* v24 — tighten BloomChic header spacing */
 .kol-title{margin:48px 0 75px}
 @media(max-width:600px){.kol-title{margin:36px 0 52px}}
+
+
+/* v27 — subtle hover emphasis for reply-rate result */
+.kol-stat-reply .reply-rate{
+  transform-origin:left center;
+  transition:transform .28s cubic-bezier(.22,.7,.2,1);
+  will-change:transform;
+}
+@media(hover:hover) and (pointer:fine){
+  .kol-stat-reply:hover .reply-rate{transform:scale(1.04)}
+}
+@media(prefers-reduced-motion:reduce){
+  .kol-stat-reply .reply-rate{transition:none}
+  .kol-stat-reply:hover .reply-rate{transform:none}
+}
