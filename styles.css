@@ -215,7 +215,7 @@
 .intro>*:not(.intro-accent-flowers){position:relative;z-index:1}
 
 .kol-section{position:relative;overflow:hidden;isolation:isolate}
-.kol-accent-brush{left:27%;top:-27%;width:49%;opacity:.13;mix-blend-mode:screen;transform:rotate(-12deg);z-index:0}
+.kol-accent-brush{left:38%;top:-16%;width:34%;opacity:.11;mix-blend-mode:screen;transform:rotate(-12deg);z-index:0}
 .kol-section>*:not(.kol-accent-brush){position:relative;z-index:1}
 
 .social-section{position:relative;overflow:hidden;isolation:isolate}
@@ -371,7 +371,7 @@
 .kol-case-top{align-items:flex-start}
 .kol-brand{display:flex;align-items:center;gap:16px}
 .kol-brand>span{font-size:9px;letter-spacing:.15em;color:#aaa;white-space:nowrap}
-.kol-brand img{width:clamp(104px,9vw,132px);height:auto;border:1px solid rgba(245,242,233,.28)}
+.kol-brand img{width:clamp(52px,4.5vw,66px);height:auto;border:1px solid rgba(245,242,233,.28)}
 .kol-stats{grid-template-columns:1fr 1fr 2fr}
 .kol-stat-reply .reply-rate{display:flex;align-items:baseline;gap:.18em;white-space:nowrap}
 .reply-rate i{font-style:normal;font-weight:300;letter-spacing:0}
@@ -379,16 +379,20 @@
 .kol-stat-reply .reply-rate>i{font-size:inherit}
 @media(max-width:900px){
   .kol-stats{grid-template-columns:1fr 1fr 2fr}
-  .kol-brand img{width:116px}
+  .kol-brand img{width:58px}
 }
 @media(max-width:600px){
   .kol-case-top{gap:20px}
   .kol-brand{gap:8px;flex-direction:column;align-items:flex-end}
   .kol-brand>span{font-size:7px}
-  .kol-brand img{width:96px}
+  .kol-brand img{width:48px}
   .kol-stats{grid-template-columns:1fr 1fr}
   .kol-stats .kol-stat-reply{grid-column:1/-1}
   .kol-stat-reply .reply-rate{display:grid;grid-template-columns:auto 1fr;gap:0;line-height:.82;white-space:normal}
   .kol-stat-reply .reply-rate span:last-child{grid-column:1/-1}
   .kol-stat-reply .reply-rate i{padding-left:.12em}
 }
+
+/* v24 — tighten BloomChic header spacing */
+.kol-title{margin:48px 0 75px}
+@media(max-width:600px){.kol-title{margin:36px 0 52px}}
